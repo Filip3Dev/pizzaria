@@ -1,0 +1,137 @@
+.pedidosBackground
+    background-image: linear-gradient(to right top, #f08978, #e07765, #d06653, #c05441, #af432f, #af422e, #ae422e, #ae412d, #bd513d, #cd614e, #dc725f, #eb8270)
+    min-height: 100vh
+    ul
+        &.sizes
+            display: flex
+            align-content: center
+            justify-content: space-between
+            list-style: none
+            padding: 0px
+            li
+                display: flex
+                align-content: center
+                justify-content: center
+                flex-direction: column
+                text-align: center
+                background: transparent
+                border-radius: 1px
+                transition: all 0.4s ease-out
+                &.activer
+                    background: #a53030
+                    border-radius: 8px
+                    transition: all 0.4s ease-in
+                    figcaption
+                        color: white
+                        transition: all 0.3s ease-in
+                        p
+                            &:first-of-type
+                                font-size: 17px
+                                font-weight: 600
+                                color: white
+                                text-align: left
+                                margin-bottom: 4px
+                            &:last-of-type
+                                font-size: 13px
+                                font-weight: 300
+                                color: white
+                                text-align: left
+                &:nth-of-type(1)
+                    figure
+                        margin-bottom: -8px
+                    img
+                        max-width: 75%
+                &:nth-of-type(2)
+                    img
+                        max-width: 90%
+                &:nth-of-type(3)
+                    img
+                        max-width: 100%
+                img
+                    object-fit: scale-down
+                    margin: 0px auto
+                figcaption
+                    font-size: 17px
+                    font-weight: 600
+                    color: black
+                    transition: all 0.3s ease-out
+                    p
+                        &:first-of-type
+                            font-size: 17px
+                            font-weight: 600
+                            color: black
+                            text-align: left
+                            margin-bottom: 4px
+                        &:last-of-type
+                            font-size: 13px
+                            font-weight: 300
+                            color: gray
+                            text-align: left
+        &.flavors
+            display: flex
+            align-content: center
+            justify-content: space-between
+            list-style: none
+            padding: 0px
+            li
+                display: flex
+                align-content: center
+                justify-content: center
+                flex-direction: column
+                text-align: center
+                background: transparent
+                position: relative
+                border-radius: 1px
+                width: 80%
+                transition: all 0.4s ease-out
+                .q-chip
+                    width: -moz-fit-content
+                    position: absolute
+                    top: 0
+                    right: 0
+                &.activer
+                    background: #a53030
+                    border-radius: 8px
+                    text-align: center
+                    display: flex
+                    align-items: center
+                    transition: all 0.4s ease-in
+                    figcaption
+                        color: white
+                        transition: all 0.3s ease-in
+                figure
+                    margin-bottom: 1px
+                    div
+                        display: flex
+                        height: 150px
+                        width: 150px
+                        margin: 0px auto
+                        img
+                            border-radius: 8px
+                            max-width: 100%
+                            object-fit: cover
+                            width: 100%
+                            margin: 0px auto
+                    figcaption
+                        font-size: 18px
+                        font-weight: 600
+                        color: black
+                        transition: all 0.3s ease-out
+.pedidoBtn
+    background: #ff4566
+    border: none
+    border-radius: 8px
+    color: #fff
+    cursor: pointer
+    font-size: 17px
+    height: 50px
+    padding: 0
+    width: 40%
+    margin: 0px auto
+    margin-bottom: 10px
+    overflow: hidden
+    transition: all .3s cubic-bezier(.6,0,.4,1)
+    box-shadow: 0 10px 34px rgba(255,68,102,.4), 0 2px 16px rgba(255,68,102,.2)
+    &:hover
+        background: #e63e5c
+        box-shadow: 0 3px 20px rgba(255,68,102,.3), 0 2px 7px rgba(255,68,102,.2)

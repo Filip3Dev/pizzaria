@@ -1,0 +1,53 @@
+@media (max-width: 580px)
+  .heroBackground
+    background-attachment: unset !important
+    min-height: 70vh
+    align-self: flex-start !important
+    .textCard
+      width: 90% !important
+    h1
+      &.heroH1
+        font-size: 38px !important
+      &.heroH2
+        font-size: 34px !important
+    .flotingButton
+      display: none
+  .sectionBackground
+    h3
+  .pedidosBackground 
+    ul
+      li
+        width: 100% !important
+    h4
+      margin-bottom: 6px
+    h5
+      font-size: 22px
+      font-weight: 600
+      margin-top: 6px
+    figcaption
+      text-align: center  !important
+      p
+        text-align: center !important
+    ul
+      &.sizes
+        flex-direction: column
+      &.flavors
+        flex-direction: column
+        li
+          width: 100% !important
+          figure 
+            div
+              height: 180px  !important
+              width: 200px !important
+  .diffTable
+    width: 90%
+  .pedidoBtn
+    width: 60% !important
+    margin: 16px auto !important
+    margin-bottom: 10px
+    overflow: hidden
+    transition: all .3s cubic-bezier(.6,0,.4,1)
+    box-shadow: 0 10px 34px rgba(255,68,102,.4), 0 2px 16px rgba(255,68,102,.2)
+    &:hover
+      background: #e63e5c
+      box-shadow: 0 3px 20px rgba(255,68,102,.3), 0 2px 7px rgba(255,68,102,.2)

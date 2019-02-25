@@ -1,0 +1,74 @@
+.heroBackground
+    background: url("../statics/pizza_chamada.jpg")
+    background-repeat: no-repeat
+    background-attachment: fixed
+    background-size: cover
+    width: 100%
+    height: 100%
+    min-height: 100vh
+    display: flex
+    align-items: center
+    .largeContentHero
+        width: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        .textCard
+            width: 65%
+            margin: 0px auto
+            text-align: center
+            background: rgba(0, 0, 0, 0.7)
+            border-radius: 8px
+            border: 1px solid #7b7b7b
+            h1
+                &.heroH1
+                    color: white
+                    font-size: 60px
+                    font-weight: 600
+                &.heroH2
+                    color: white
+                    font-size: 50px
+                    font-weight: 600
+.flotingButton
+    position: absolute
+    top: 90vh
+    left: 50vw
+    background: white
+    border-radius: 100%
+    width: 40px
+    height: 40px
+    display: flex
+    align-items: center
+    justify-content: center
+    animation: pulsate-fwd 2s ease-in-out infinite both
+    i
+        font-size: 38px
+.sectionBackground
+    background: white
+.pedidoBtn
+    background: #ff4566
+    border: none
+    border-radius: 8px
+    color: #fff
+    cursor: pointer
+    font-size: 17px
+    height: 50px
+    padding: 0
+    width: 40%
+    margin: 0px auto
+    margin-bottom: 10px
+    overflow: hidden
+    transition: all .3s cubic-bezier(.6,0,.4,1)
+    box-shadow: 0 10px 34px rgba(255,68,102,.4), 0 2px 16px rgba(255,68,102,.2)
+    &:hover
+        background: #e63e5c
+        box-shadow: 0 3px 20px rgba(255,68,102,.3), 0 2px 7px rgba(255,68,102,.2)
+
+
+@keyframes pulsate-fwd
+  0%
+    transform: scale(1)
+  50%
+    transform: scale(1.1)
+  100%
+    transform: scale(1)

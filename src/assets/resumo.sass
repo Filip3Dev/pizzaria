@@ -1,0 +1,40 @@
+.pedidosBackground
+  background-image: linear-gradient(to right top, #f08978, #e07765, #d06653, #c05441, #af432f, #af422e, #ae422e, #ae412d, #bd513d, #cd614e, #dc725f, #eb8270)
+  min-height: 100vh
+.diffTable
+  border-collapse: collapse
+  width: 70%
+  margin: 0px auto
+  &.table-striped 
+    tbody 
+      tr
+        height: 38px
+        &:nth-of-type(2n+1)
+          background-color: rgba(0,0,0,.05)
+        td
+          &:first-of-type
+            font-size: 16px
+            font-weight: normal
+          &:last-of-type
+            font-size: 17px
+            font-weight: 600
+.captalize
+  text-transform: capitalize
+.pedidoBtn
+  background: #ff4566
+  border: none
+  border-radius: 8px
+  color: #fff
+  cursor: pointer
+  font-size: 17px
+  height: 50px
+  padding: 0
+  width: 40%
+  margin: 0px auto
+  margin-bottom: 10px
+  overflow: hidden
+  transition: all .3s cubic-bezier(.6,0,.4,1)
+  box-shadow: 0 10px 34px rgba(255,68,102,.4), 0 2px 16px rgba(255,68,102,.2)
+  &:hover
+      background: #e63e5c
+      box-shadow: 0 3px 20px rgba(255,68,102,.3), 0 2px 7px rgba(255,68,102,.2)
